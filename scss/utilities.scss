@@ -1,0 +1,72 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  transition: all 0.5s;
+  border:none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $main-color;
+
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color:#333;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background: $dark-color;
+  }
+
+  &-outline {
+    @extend %btn-shared;
+    border: 1px #fff solid;
+    color: #f4f4f4;
+  }
+}
+
+
+//Underline
+
+.underline {
+  height:2px;
+  width: 90rem;
+  background: $dark-color;
+  display: block;
+  // This allows the underlines to go over the background image
+  position: absolute;
+  z-index: 1;
+  
+ 
+}
+
+.card {
+  display: grid;
+  
+}
+
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
